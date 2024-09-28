@@ -10,7 +10,7 @@ public class MyRestfulServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MyRestfulServiceApplication.class, args);
 
-		// show bean list
+		// show bean list code
 //		ApplicationContext ac
 //		String[] AllBeanNames = ac.getBeanDefinitionNames();
 //		for (String beanName : AllBeanNames) {

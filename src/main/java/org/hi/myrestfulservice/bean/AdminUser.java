@@ -13,7 +13,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonFilter("userInfo")
+@JsonFilter("UserInfo")
 public class AdminUser {
     private Integer Id;
 

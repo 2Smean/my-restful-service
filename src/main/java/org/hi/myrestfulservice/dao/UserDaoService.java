@@ -15,9 +15,9 @@ public class UserDaoService {
     private static int usersCount = 3;
 
     static {
-        users.add(new User(1, "java", new Date()));
-        users.add(new User(2, "kotlin", new Date()));
-        users.add(new User(3, "study", new Date()));
+        users.add(new User(1, "java", new Date(), "test1", "111111-1111111"));
+        users.add(new User(2, "kotlin", new Date(), "test2", "222222-2222222"));
+        users.add(new User(3, "study", new Date(), "test3", "333333-3333333"));
     }
 
     // 전체 users 에서 가져오는 findAll method 생성

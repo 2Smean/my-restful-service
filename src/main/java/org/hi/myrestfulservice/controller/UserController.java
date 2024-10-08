@@ -1,6 +1,6 @@
 package org.hi.myrestfulservice.controller;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.hi.myrestfulservice.bean.User;
 import org.hi.myrestfulservice.dao.UserDaoService;
 import org.hi.myrestfulservice.exception.UserNotFoundException;

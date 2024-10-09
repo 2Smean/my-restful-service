@@ -3,7 +3,7 @@ package org.hi.myrestfulservice.controller;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.hi.myrestfulservice.bean.AdminUser;
 import org.hi.myrestfulservice.bean.AdminUserV2;
 import org.hi.myrestfulservice.bean.User;

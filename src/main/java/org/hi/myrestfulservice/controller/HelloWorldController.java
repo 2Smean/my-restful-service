@@ -1,6 +1,6 @@
 package org.hi.myrestfulservice.controller;
 
-import javax.servlet.Servlet;
+import jakarta.servlet.Servlet;
 import org.hi.myrestfulservice.bean.HelloWorldBean;
 import org.springframework.context.MessageSource;
 import org.springframework.web.bind.annotation.GetMapping;

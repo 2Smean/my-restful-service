@@ -19,7 +19,7 @@ public class UserJpaController {
     }
 
     // /jpa/users
-    @GetMapping("users")
+    @GetMapping("/users")
     public List<User> retrieveAllUsers() {
         return userRepository.findAll();
     }

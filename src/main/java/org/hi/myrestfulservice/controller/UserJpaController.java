@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,6 +32,19 @@ public class UserJpaController {
     @GetMapping("/users")
     public List<User> retrieveAllUsers() {
         return userRepository.findAll();
+    }
+
+    // /jpa/users/quiz
+    @GetMapping("/users/quiz")
+    public ResponseEntity<Object> retrieveAllUsersWithCount() {
+        List<User> users = userRepository.findAll();
+        int count = users.size();
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("count", count);
+        map.put("users", users);
+
+        return ResponseEntity.ok(map);
     }
 
     // /jpa/users/{id}
